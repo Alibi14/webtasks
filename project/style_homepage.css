@@ -1,0 +1,321 @@
+body{
+	margin: 0;
+}
+
+header{
+	background-image: url("img/main_background1.jpg");
+	height: 100vh;
+	background-size:cover;
+}
+nav {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 90px;		
+}
+a.first_link {
+	color: white;
+	font-family: 'Signika', sans-serif;
+	text-decoration: None;	
+	font-size: 20px;
+}
+a.header_link{
+	font-family: 'Raleway', sans-serif;
+	text-decoration: none;
+	font-size: 25px;
+	color: white;
+	margin: 45px;
+	position: relative;
+}
+a.header_link::before {
+	content: '';
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	width: 0%;
+	height: 2px;
+	background-color: white;
+	transition: 0.4s;											
+}
+a.header_link:hover:before{
+	width: 100%;
+	left: 0;
+}
+.header_objects{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 500px;
+	position: relative;
+	margin-right: 500px;
+}
+.header_objects	 div{
+	color: white;
+	font-size: 75px;
+	font-family: 'Signika', sans-serif;
+}
+/* Тут начинается About us*/
+#About{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 100vh;
+}
+.img_left img{
+	border-radius: 300px;
+	height: 480px;
+	width: 480px;
+	margin-left: 80px;
+}
+.special{
+	line-height: 10px;
+	margin-bottom: 120px;
+	margin-right: 60px;	
+}
+.special h1{
+	font-family: 'Josefin Slab', serif;	
+	font-size: 38px;
+	font-style: inherit;
+}
+.special h3{
+	border-left:3px solid #545454;
+	font-size: 21px;
+	padding-left: 3px;
+	line-height: 32px;
+	font-family: 'Thasadith', sans-serif;
+}
+/* Тут начинаются рецепты*/
+#Recipes{
+	background-image: url(img/26.jpg);
+	background-repeat: repeat;
+	display: flex;
+	justify-content: center;
+}
+.receptter{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	margin: 75px 0;
+	width: 60%;
+	height: 80%;
+	font-family: 'ZCOOL XiaoWei', serif;
+}
+.big_recipe{ /* большой контейнер для стейка*/
+	width: 100%;
+	height: 300px;
+	border: none ;
+	border-radius: 30px;
+	display: flex;
+	color: white;
+	overflow: hidden;
+}
+.steak{
+	width: 50%;
+	order: 1;
+	position: relative;
+	border-right: 1px solid black;
+}
+.steak img{ /* фото стейка*/
+	height: 100%;
+	width: 100%;
+}
+.steak h3{ /*Слово Steak*/
+	position: absolute;
+	bottom: 0px;
+	left: 55px;
+	letter-spacing: 7px;
+	font-size: 30px;
+}
+.about_1 { /* Контейнер в котором текст описания стейка*/ 
+	width: 50%;
+	order: 2;
+	background-color: rgba(102, 69, 41, 0.85);
+	border-left: 1px solid black;
+	position: relative;
+}
+.about_1 p{ /*Текст описания Стейка*/
+	position: absolute;
+	top: 10px;
+	left: 20px;
+	letter-spacing: 2px;  
+	line-height: 20px;
+	font-size: 18px;
+	margin-right: 15px;
+}
+.recipe{ /*дальше разберешsься ориентируясь по html коду*/
+	width: 43%;
+	height: 400px;
+	border: none;
+	border-radius: 30px;
+	display: flex;
+	flex-direction: column;
+	color: white;
+	overflow: hidden;
+	margin: 60px 0px;
+}
+.margarita{
+	height: 50%;
+	order:1;
+	position: relative;
+	border-bottom: 1px solid black;
+}
+.margarita h3{
+	position: absolute;
+	bottom: 0;
+	left: 15px;
+	font-size: 25px;
+	letter-spacing: 7px;
+}
+.margarita img{
+	height: 100%;
+	width: 100%;
+}
+.about_2{
+	height: 50%;
+	order: 2;
+	background-color: rgba(102, 69, 41, 0.85);
+	position: relative;
+}
+.about_2 p{
+	position: absolute;
+	left:16px;
+	letter-spacing: 2px;
+	font-size: 17px;
+	line-height: 18px;
+}
+.tiramisu{
+	height: 50%;
+	order:1;
+	position: relative;
+	border-bottom: 1px solid black;
+}
+.tiramisu img{
+	width: 100%;
+	height: 100%;
+}
+.tiramisu h3{
+	position: absolute;
+	bottom: 0;
+	left: 15px;
+	font-size: 25px;
+	letter-spacing: 7px;
+}
+.about_3{
+	height: 50%;
+	order: 2;
+	background-color: rgba(102, 69, 41, 0.85);
+	position: relative;
+}
+.about_3 p{
+	position: absolute;
+	left:16px;
+	letter-spacing: 2px;
+	font-size: 17px;
+	line-height: 18px;
+}
+.read_more{ /* Это button Стейка*/
+	position: absolute;
+	right: 128px;
+	bottom: 20px;
+	border-radius: 35px;
+	height: 37px;
+	width: 150px;
+	font-size: 13px;
+	letter-spacing: 2px;
+	text-align: center;
+	background-color: rgba(102, 69, 41, 0.85);
+	cursor: pointer;
+	color: white;
+	outline: none;
+	border: 2px solid white;
+}
+.read_more:hover {
+	background-color: white;
+	color: rgba(102, 69, 41, 0.85);
+}
+.read_more_1{ /* Это button'ы маргариты и тирамису*/
+	position: absolute;
+	right: 97px;
+	bottom: 20px;
+	border-radius: 35px;
+	height: 37px;
+	width: 150px;
+	font-size: 13px;
+	letter-spacing: 2px;
+	text-align: center;
+	background-color: rgba(102, 69, 41, 0.85);
+	cursor: pointer;
+	color: white;
+	outline: none;
+	border: 2px solid white;
+}
+.read_more_1:hover {
+	background-color: white;
+	color: rgba(102, 69, 41, 0.85);
+}
+/* Тут contact us, все расположено по очереди*/
+.prefooter{
+	height: 65vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;	
+	line-height: 33px;
+}
+.prefooter p{
+	font-family: 'Work Sans', sans-serif;
+	font-size: 60px;
+	letter-spacing: 9px;
+}
+.inp{
+	border: 3px solid #F2EDED;
+	border-radius: 25px;
+	padding: 10px 15px;
+	width: 288px;
+	height: 24px;
+	font-size: 15px;
+	margin: 5px;
+	font-family: 'Work Sans', sans-serif;
+	letter-spacing: 1px;
+	outline: none;
+}
+.send_button{
+	margin-top: 25px;
+	border-radius: 35px;
+	height: 37px;
+	width: 150px;
+	font-size: 20px;
+	text-align: center;
+	background-color: white;
+	cursor: pointer;
+	color: #2957D7;
+	outline: none;
+	border: 2px solid #2957D7;
+	box-shadow: 0 5px #F2EDED;
+}
+.send_button:hover {
+	background-color: #2957D7;
+	color: white;
+}
+.send_button:active {
+  background-color: #2957D7;
+  box-shadow: 0 2px #949494;
+  transform: translateY(3px);
+}
+footer{
+	text-align: center;
+	height: 13vh;
+	background-color: black;
+	font-size: 20px;
+}<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="test_style.css">
+</head>
+<body>
+	<div class="text">This is text</div>
+</body>
+</html>

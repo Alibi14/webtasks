@@ -1,0 +1,12 @@
+.first{
+	width: 100%;
+	border: 1px solid black;
+	padding: 0;	
+}
+.second{
+	width: 8%;
+	margin-top: 20px;
+	margin-left: 40%;
+	border-radius: 5px;
+	border: 2px solid black;
+}

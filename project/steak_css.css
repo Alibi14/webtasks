@@ -1,0 +1,38 @@
+.big_container{
+	overflow: hidden;
+	height: 85%;
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+	border-radius: 30px;
+	margin:auto;
+	color: white;
+	background-image: url(img/steak.jpg);
+	background-size: cover;
+	font-family: 'ZCOOL XiaoWei', serif;
+}
+.Steak{
+	position: relative;
+	height: 200px;
+	width: 100%;
+	order: 1;
+}
+.Steak h1{
+	font-size: 70px;
+	position: absolute;
+	bottom: 0px;
+	letter-spacing: 10px;
+	left: 50px;
+}
+.About_steak{/*background для описания выберешь сам*/
+	width: 100%;
+	height: 400px;
+	order: 2;
+	background-color: grey;
+	position: relative;
+}
+.About_steak p{
+	position: absolute;
+	left: 50px;
+	font-size: 20px;
+}
